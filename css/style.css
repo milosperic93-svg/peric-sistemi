@@ -1,0 +1,319 @@
+/* ===========================
+   PERIĆ SISTEMI
+   STYLE v1.0
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#0f1115;
+
+    color:#ffffff;
+
+    line-height:1.6;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* HEADER */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(15,17,21,.92);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#ff8c00;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:#ff8c00;
+
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+    background:linear-gradient(rgba(15,17,21,.88),rgba(15,17,21,.92)),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:21px;
+
+    color:#cfcfcf;
+
+    margin-bottom:45px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.orange{
+
+    background:#ff8c00;
+
+    color:white;
+
+}
+
+.orange:hover{
+
+    transform:translateY(-4px);
+
+    background:#ff9d24;
+
+}
+
+.dark{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+.dark:hover{
+
+    background:white;
+
+    color:#111;
+
+}
+
+/* USLUGE */
+
+#usluge{
+
+    padding:100px 0;
+
+}
+
+#usluge h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#181b20;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border:1px solid #ff8c00;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#ff8c00;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    padding:50px;
+
+    text-align:center;
+
+    color:#888;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* MOBILNI */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+header .container{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
